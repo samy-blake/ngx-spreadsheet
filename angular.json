@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "ngx-spreadsheet": {
+      "projectType": "library",
+      "root": "projects/ngx-spreadsheet",
+      "sourceRoot": "projects/ngx-spreadsheet/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-spreadsheet/tsconfig.lib.json",
+            "project": "projects/ngx-spreadsheet/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-spreadsheet/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-spreadsheet/src/test.ts",
+            "tsConfig": "projects/ngx-spreadsheet/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-spreadsheet/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-spreadsheet/tsconfig.lib.json",
+              "projects/ngx-spreadsheet/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngx-spreadsheet-app"
 }
