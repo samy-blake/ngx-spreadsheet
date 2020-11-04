@@ -1,24 +1,46 @@
-# NgxSpreadsheet
+# NgxSpreadsheetApp
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-## Code scaffolding
+## Docs
 
-Run `ng generate component component-name --project ngx-spreadsheet` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-spreadsheet`.
-> Note: Don't forget to add `--project ngx-spreadsheet` or else it will be added to the default project in your `angular.json` file. 
+Angular wrap from [x-spreadsheet](https://github.com/myliang/x-spreadsheet)
+
+```html
+<div class="parent" #parent>
+  <ngx-spreadsheet
+    [data]="data"
+    [parent]="parent"
+    [options]="{}"
+    [localData]="localData"
+    (changeData)="onSpreadsheetChange($event)"
+    (cellEdited)="onEvent('cellEdited', $event)"
+    (cellSelected)="onEvent('cellSelected', $event)"
+  >
+  </ngx-spreadsheet>
+</div>
+```
+
+```ts
+// Input:
+data: SpreadsheetData;
+options: SpreadsheetOptions;
+parent: HTMLElement // for height and width from parent
+
+// Output:
+cellEdited = new EventEmitter<SpreadsheetCellText>();
+cellSelected = new EventEmitter<SpreadsheetCell>();
+changeData = new EventEmitter<SpreadsheetData>();
+
+// Methodes:
+setCellText(data: SpreadsheetCellText): NgxSpreadsheetComponent
+reRender(): NgxSpreadsheetComponent
+```
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build ngx-spreadsheet` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-spreadsheet`, go to the dist folder `cd dist/ngx-spreadsheet` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-spreadsheet` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm run build` to build the project.

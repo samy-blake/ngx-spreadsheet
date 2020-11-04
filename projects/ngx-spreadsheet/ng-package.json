@@ -10,5 +10,8 @@
       "@soeren_balke/x-data-spreadsheet/src/locale/en": "en",
       "@soeren_balke/x-data-spreadsheet/src/locale/nl": "nl"
     }
-  }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@soeren_balke/x-data-spreadsheet"
+  ]
 }

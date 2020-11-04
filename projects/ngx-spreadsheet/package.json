@@ -1,5 +1,5 @@
 {
-  "name": "ngx-spreadsheet",
+  "name": "ngx-data-spreadsheet",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.2.0",

@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng build ngx-spreadsheet --prod"
+    "build:lib": "ng build ngx-spreadsheet --prod",
+    "prod:lib": "cd dist/ngx-spreadsheet && npm publish --access public"
   },
   "private": true,
   "dependencies": {
