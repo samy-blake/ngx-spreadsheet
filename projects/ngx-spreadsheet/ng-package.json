@@ -4,11 +4,11 @@
   "lib": {
     "entryFile": "src/public-api.ts",
     "umdModuleIds": {
-      "x-data-spreadsheet": "Spreadsheet",
-      "x-data-spreadsheet/src/locale/zh-cn": "zhCN",
-      "x-data-spreadsheet/src/locale/de": "de",
-      "x-data-spreadsheet/src/locale/en": "en",
-      "x-data-spreadsheet/src/locale/nl": "nl"
+      "@soeren_balke/x-data-spreadsheet": "Spreadsheet",
+      "@soeren_balke/x-data-spreadsheet/src/locale/zh-cn": "zhCN",
+      "@soeren_balke/x-data-spreadsheet/src/locale/de": "de",
+      "@soeren_balke/x-data-spreadsheet/src/locale/en": "en",
+      "@soeren_balke/x-data-spreadsheet/src/locale/nl": "nl"
     }
   }
 }

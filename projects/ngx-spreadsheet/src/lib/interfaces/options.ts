@@ -1,4 +1,4 @@
-import { Options } from 'x-data-spreadsheet';
+import { Options } from '@soeren_balke/x-data-spreadsheet';
 
 export interface SpreadsheetOptions extends Options {
 }

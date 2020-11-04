@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.2.0",
-    "@angular/core": "^10.2.0",
-    "x-data-spreadsheet": "^1.1.8"
+    "@angular/core": "^10.2.0"
   },
   "dependencies": {
+    "@soeren_balke/x-data-spreadsheet": "0.0.1",
     "tslib": "^2.0.0"
   }
 }

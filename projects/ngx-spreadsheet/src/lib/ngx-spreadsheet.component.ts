@@ -9,7 +9,7 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import Spreadsheet from 'x-data-spreadsheet';
+import Spreadsheet from '@soeren_balke/x-data-spreadsheet';
 
 import { SpreadsheetCell } from './interfaces/cell';
 import { SpreadsheetCellText } from './interfaces/cell-text';
