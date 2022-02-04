@@ -1,12 +1,12 @@
 {
   "name": "ngx-data-spreadsheet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^10.2.0",
     "@angular/core": "^10.2.0"
   },
   "dependencies": {
-    "@soeren_balke/x-data-spreadsheet": "0.0.1",
+    "@soeren_balke/x-data-spreadsheet": "0.1.0",
     "tslib": "^2.0.0"
   }
 }
